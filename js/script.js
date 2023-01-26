@@ -31,6 +31,7 @@ function Weather1(currentData) {
     <p>Temp: ${currentData.list[0].main.temp} °F</p>
     <p>Humidity:  ${currentData.list[0].main.humidity} %</p>
     <p>Wind Speed: ${currentData.list[0].wind.speed} mps</p>
+    
     `
     
     Divs.innerHTML = HTML
@@ -51,6 +52,8 @@ function Weatherresults(forecastData) {
     `
     one.innerHTML = Updated;
 
+
+    
     Updated= 
     `<p>${new Date(forecastData.list[11].dt_txt).toLocaleDateString()}</p>
     <img src="http://openweathermap.org/img/wn/${forecastData.list[11].weather[0].icon}@2x.png" alt="">
@@ -58,6 +61,8 @@ function Weatherresults(forecastData) {
     <p>Humidity: ${forecastData.list[11].main.humidity} %</p>
     <p>Wind Speeds: ${forecastData.list[11].wind.speed} mps</p>`
     two.innerHTML = Updated;
+
+
 
     Updated= 
     `<p>${new Date(forecastData.list[19].dt_txt).toLocaleDateString()}</p>
@@ -67,6 +72,8 @@ function Weatherresults(forecastData) {
     <p>Wind Speeds: ${forecastData.list[19].wind.speed} mps</p>`
     three.innerHTML = Updated;
 
+
+
     Updated= 
     `<p>${new Date(forecastData.list[27].dt_txt).toLocaleDateString()}</p>
     <img src="http://openweathermap.org/img/wn/${forecastData.list[27].weather[0].icon}@2x.png" alt="">
@@ -74,6 +81,8 @@ function Weatherresults(forecastData) {
     <p>Humidity: ${forecastData.list[27].main.humidity} %</p>
     <p>Wind Speeds: ${forecastData.list[27].wind.speed} mps</p>`
     four.innerHTML = Updated;
+
+
 
     Updated= 
     `<p>${new Date(forecastData.list[35].dt_txt).toLocaleDateString()}</p>
